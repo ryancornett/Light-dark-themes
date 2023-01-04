@@ -1,0 +1,184 @@
+:root, *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins');
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    transition: all ease 0.3s;
+    width: 85vw;
+    margin: 0 auto;
+  }
+  
+  body.active {
+    background-color: #333;
+    transition: all ease 0.3s;
+  }
+  
+  .toggleMsg {
+    width: 6em;
+    position: absolute;
+    top: 17px;
+    right: 10vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: .6em;
+  }
+  
+  .click-here {
+    color: #223;
+    transition: all ease 2s;
+    transition-delay: 1s;
+  }
+  
+  .click-here.active {
+    color: white;
+    transition: all ease 3s;
+    transition-delay: 0.35s;
+  }
+  
+  .oval-bg {
+    position: absolute;
+    right: 11.1vw;
+    top: 2em;
+    width: 24px;
+    height: 24px;
+    background-color: #999;
+    content: '';
+    z-index: 2;
+    filter: drop-shadow(0 2px 2px #88aa33);
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+  }
+  
+  .oval-bg:before {
+    position: absolute;
+    content: "";
+    background-color: #999;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    right: 0.8em;
+  }
+  
+  .oval-bg:after {
+    position: absolute;
+    content: "";
+    background-color: #999;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    right: -0.75em;
+  }
+  
+  .oval-bg.active {
+    filter: drop-shadow(0 2px 2px #4444dd);
+    transition: background-color ease 0.3s;
+  }
+  
+  .switch {
+    position: absolute;
+    display: inline-block;
+    right: 11.9vw;
+    top: 35px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    content: '';
+    border-radius: 50%;
+    z-index: 3;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #222;
+  }
+  
+  .switch:hover {
+    background-color: #e0e9e9;
+    transition: all ease 0.3s;
+  }
+  
+  .switch.active {
+    right: 10.7vw;
+    transition: all ease 0.3s;
+  }
+  
+  .switch.active:hover {
+    transition: all ease 0.3s;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    min-width: 180px;
+    max-width: 360px;
+    background-color: #eeefef;
+    margin: 5em 2em 0 2em;
+    border: solid 1px #dddede;
+    transition: all ease 0.3s;
+    flex: 1 1 150px;
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 8px;
+  }
+  
+  .card.active {
+    background-color: #11577a;
+    border: solid 2px #004669;
+    transition: all ease 0.3s;
+    box-shadow: 0px 5px 5px #222;
+  }
+  
+  /* .card:nth-of-type(2) {
+    background-color: red;
+  }
+  
+  .card:nth-of-type(2).active {
+    background-color: #993311;
+  }
+  
+  .card:nth-of-type(3) {
+    background-color: steelblue;
+  }
+  
+  .card:nth-of-type(3).active {
+    background-color: #cc1199;
+  } */
+  
+  .default {
+    color: #222;
+    text-align: center;
+    padding: 1em;
+    transition: all ease 0.3s;
+  }
+  
+  .default.active {
+    color: white;
+    transition: all ease 0.3s;
+  }
+  
+  .bottom-wrapper {
+    width: 90%;
+    margin: 2em auto;
+    border: 2px solid #bbb;
+    padding: 1em;
+    border-radius: 20px;
+  }
+  
+  .filler {
+    color: black;
+    transition: color ease 0.3s;
+    font-size: 0.9em;
+  }
+  
+  .filler.active {
+    color: white;
+    transition: color ease 0.3s;
+  }
